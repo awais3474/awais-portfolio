@@ -1,0 +1,399 @@
+<title>Muhammad Awais | Portfolio</title>
+
+<style>
+    /* =========================
+       GLOBAL STYLES
+    ========================== */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f4f7fb;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+        background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        color: white;
+        text-align: center;
+        padding: 70px 20px;
+    }
+
+    header h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    header p {
+        font-size: 18px;
+        color: #dbeafe;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================== */
+
+    nav {
+        background: #ffffff;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav a {
+        color: #1e3a8a;
+        text-decoration: none;
+        font-weight: 600;
+        margin: 0 15px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #2563eb;
+    }
+
+    /* =========================
+       MAIN CONTAINER
+    ========================== */
+
+    .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+    }
+
+    /* =========================
+       SECTION / CARD
+    ========================== */
+
+    section {
+        background: white;
+        padding: 35px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+    }
+
+    section h2 {
+        color: #1e3a8a;
+        font-size: 28px;
+        margin-bottom: 20px;
+        border-left: 5px solid #2563eb;
+        padding-left: 12px;
+    }
+
+    section p {
+        color: #555;
+        text-align: justify;
+    }
+
+    /* =========================
+       SKILLS
+    ========================== */
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .skill {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        padding: 18px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .skill:hover {
+        background: #eff6ff;
+        border-color: #2563eb;
+        transform: translateY(-3px);
+    }
+
+    .skill h3 {
+        color: #1e3a8a;
+        margin-bottom: 5px;
+    }
+
+    .skill p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    /* =========================
+       INTERESTS
+    ========================== */
+
+    .interests {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .interest {
+        background: #1e3a8a;
+        color: white;
+        padding: 18px;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .interest:hover {
+        background: #2563eb;
+        transform: scale(1.03);
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+        background: #0f172a;
+        color: #cbd5e1;
+        text-align: center;
+        padding: 25px;
+        margin-top: 50px;
+    }
+
+    footer strong {
+        color: white;
+    }
+
+    /* =========================
+       RESPONSIVE DESIGN
+    ========================== */
+
+    @media (max-width: 768px) {
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px 8px;
+            font-size: 14px;
+        }
+
+        .skills {
+            grid-template-columns: 1fr;
+        }
+
+        .interests {
+            grid-template-columns: 1fr;
+        }
+
+        section {
+            padding: 25px;
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        header {
+            padding: 50px 15px;
+        }
+
+        header h1 {
+            font-size: 27px;
+        }
+
+        header p {
+            font-size: 15px;
+        }
+
+        .container {
+            width: 94%;
+        }
+    }
+</style>
+<!-- HEADER -->
+<header>
+    <h1>Muhammad Awais</h1>
+    <p>DAE CIT Student | Programmer | Web Developer</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#experience">Experience</a>
+    <a href="#interests">Interests</a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="container">
+
+    <!-- INTRODUCTION -->
+    <section id="introduction">
+
+        <h2>Introduction</h2>
+
+        <p>
+            Hi! My name is Muhammad Awais, and I am a DAE CIT
+            (Diploma of Associate Engineering in Computer Information
+            Technology) 2nd-year student. I am from Gujranwala, Pakistan.
+            I completed my Matriculation in Computer Science, which
+            developed my interest in computers and technology.
+        </p>
+
+        <br>
+
+        <p>
+            Currently, I am continuing my studies in Computer Information
+            Technology and improving my skills in programming, web
+            development, and other areas of IT. I am a motivated and
+            hardworking student who enjoys learning new technologies and
+            building practical projects. My goal is to enhance my
+            technical skills and grow as a professional in the field of
+            Information Technology.
+        </p>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+
+        <h2>Experience & Skills</h2>
+
+        <p>
+            As a DAE Computer Information Technology student, I have gained
+            practical experience in programming, web development, computer
+            hardware, and system configuration. I have worked with C++ to
+            develop my programming and problem-solving skills and have also
+            practiced HTML and CSS for creating basic websites.
+        </p>
+
+        <br>
+
+        <p>
+            In addition, I have hands-on knowledge of BIOS/UEFI
+            configuration, Windows installation, software configuration,
+            and basic computer troubleshooting. Through academic and
+            personal projects, I continue to improve my technical skills
+            and gain practical experience in the field of Information
+            Technology.
+        </p>
+
+
+        <div class="skills">
+
+            <div class="skill">
+                <h3>C++ Programming</h3>
+                <p>
+                    Basic programming, functions, loops, arrays, and
+                    problem-solving.
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>
+                    HTML, CSS, and basic responsive website development.
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>BIOS / UEFI</h3>
+                <p>
+                    Boot settings, boot priority, and system configuration.
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>Windows Installation</h3>
+                <p>
+                    Operating system installation and basic configuration.
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>Software Installation</h3>
+                <p>
+                    Installing and configuring common computer applications.
+                </p>
+            </div>
+
+            <div class="skill">
+                <h3>IT Troubleshooting</h3>
+                <p>
+                    Identifying and resolving basic hardware and software
+                    issues.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTERESTS -->
+    <section id="interests">
+
+        <h2>Interests</h2>
+
+        <div class="interests">
+
+            <div class="interest">
+                Programming & Software Development
+            </div>
+
+            <div class="interest">
+                Web Development
+            </div>
+
+            <div class="interest">
+                Problem Solving
+            </div>
+
+            <div class="interest">
+                Graphic Designing
+            </div>
+
+            <div class="interest">
+                UI & Creative Design
+            </div>
+
+            <div class="interest">
+                Building Practical Projects
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+    <p>
+        © 2026 <strong>Muhammad Awais</strong> | Personal Portfolio
+    </p>
+</footer>
